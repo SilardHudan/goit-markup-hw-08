@@ -69,8 +69,9 @@
     height: 100vh;
     padding-top:10px;
     padding-bottom: 48px;
-    overflow-y: auto;
+   
         .container{
+        overflow-y: auto;
         display: flex;
         flex-direction: column;
         height: 100%;
@@ -162,4 +163,7 @@
     letter-spacing: 0.02em;
     color: #2196F3;
     position: relative;
+}
+.no-scroll{
+    overflow: hidden;
 }

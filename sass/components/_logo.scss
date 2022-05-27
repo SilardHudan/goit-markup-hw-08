@@ -22,7 +22,13 @@
     font-size: 26px;
     line-height: 1.19;
     letter-spacing: 0.03em;
-    color: var(--title-color-second)
+    color: var(--title-color-second);
+    display: block;
+    text-align: center;
+    @include desktop {
+            text-align: left;
+        }
+   
 }
 
 
@@ -32,5 +38,5 @@
     font-size: 26px;
     line-height: 1.19;
     letter-spacing: 0.03em;
-    color: var(--header-color-second)
+    color: var(--header-color-second);
 }

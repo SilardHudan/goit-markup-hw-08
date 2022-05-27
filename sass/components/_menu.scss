@@ -17,6 +17,9 @@
     padding-bottom: 32px;
     padding-top: 32px;
     display: none;
+    @include desktop {
+            display: block;
+        }
     position: relative;
     &::after {
         content: "";
@@ -27,6 +30,7 @@
         display: block;
         bottom: 0;
         position: absolute;
+        
     }
                 
     
@@ -45,6 +49,9 @@
     padding-top: 32px;
     color: var(--header-color-third);
     display: none;
+    @include desktop {
+            display: block;
+        }
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
     &:hover {
@@ -69,7 +76,8 @@
     height: 100vh;
     padding-top:10px;
     padding-bottom: 48px;
-   
+    transition: visibility 1500ms cubic-bezier(0.4, 0, 0.2, 1),
+        opacity 1500ms cubic-bezier(0.4, 0, 0.2, 1);
         .container{
         overflow-y: auto;
         display: flex;
@@ -86,7 +94,7 @@
     font-size: 40px;
     line-height: 1.17;
     letter-spacing: 0.02em;
-    // display: block;
+    display: block;
     color: var(--header-color-third);
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
@@ -104,7 +112,7 @@
     line-height: 1.17;
     letter-spacing: 0.02em;
     color: var(--header-color-second);
-    // display: block;
+    display: block;
 }
 .mob-menu-list__item:not(:last-child) {
     margin-bottom: 32px;

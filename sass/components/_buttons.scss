@@ -77,6 +77,9 @@
     &:focus {
             fill: #188CE8;
         }
+        @include desktop {
+            display: none;
+        }
 }
 .mob-menu__close-btn{
     width: 40px;

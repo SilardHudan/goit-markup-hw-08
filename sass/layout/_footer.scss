@@ -90,12 +90,14 @@
 }
 
 .footer-soclist {
-    margin-top: 12px;
+    margin-top: 60px;
     @include tablet {
     margin-left: 165px;
+    margin-top: 12px;
     }
     @include desktop {
     margin-left: 70px;
+    margin-top: 12px;
     }
     
     
@@ -145,8 +147,16 @@
 }
 
 .footer-input-group__wrap {
-    margin-top: 12px;
+    margin-top: 60px;
+    @include tablet {
+            width: 450px;
+            height: 100%;
+            margin: auto;
+            margin-top: 60px;
+            margin-bottom: 20px;
+        }
      @include desktop {
+            margin-top: 12px;
             margin-left: 93px;
             width: 358px;
             height: 100%;
@@ -179,9 +189,10 @@
 }
 
 .footer-input-group__btn-wrap {
-    margin-top: 50px;
+    margin-top: 20px;
     @include desktop {
             margin-left: 12px;
+            margin-top: 50px;
         }
 }
 

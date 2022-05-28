@@ -80,7 +80,7 @@ button {
   line-height: 1.88;
   letter-spacing: 0.06em;
   color: #FFFFFF;
-  width: 200px;
+  min-width: 200px;
   height: 50px;
   text-align: left;
   padding-left: 29px;
@@ -93,6 +93,7 @@ button {
 .portfolio__button {
   font-family: roboto, Tahoma, sans-serif;
   background-color: #F5F4FA;
+  font-style: normal;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
@@ -1387,18 +1388,20 @@ button {
 }
 
 .footer-soclist {
-  margin-top: 12px;
+  margin-top: 60px;
 }
 
 @media screen and (min-width: 768px) {
   .footer-soclist {
     margin-left: 165px;
+    margin-top: 12px;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .footer-soclist {
     margin-left: 70px;
+    margin-top: 12px;
   }
 }
 
@@ -1441,11 +1444,22 @@ button {
 }
 
 .footer-input-group__wrap {
-  margin-top: 12px;
+  margin-top: 60px;
+}
+
+@media screen and (min-width: 768px) {
+  .footer-input-group__wrap {
+    width: 450px;
+    height: 100%;
+    margin: auto;
+    margin-top: 60px;
+    margin-bottom: 20px;
+  }
 }
 
 @media screen and (min-width: 1200px) {
   .footer-input-group__wrap {
+    margin-top: 12px;
     margin-left: 93px;
     width: 358px;
     height: 100%;
@@ -1474,12 +1488,13 @@ button {
 }
 
 .footer-input-group__btn-wrap {
-  margin-top: 50px;
+  margin-top: 20px;
 }
 
 @media screen and (min-width: 1200px) {
   .footer-input-group__btn-wrap {
     margin-left: 12px;
+    margin-top: 50px;
   }
 }
 
@@ -1542,7 +1557,7 @@ button {
   .portfolio__img-list {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: left;
     margin-right: -30px;
     margin-bottom: -30px;
   }

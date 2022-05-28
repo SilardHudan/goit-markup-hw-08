@@ -37,11 +37,10 @@
 
 .clients-list__item{
     margin-bottom: 30px;
-   
         @include mobile {
                 margin-right: 30px;
-                    margin-bottom: 30px;
-                    width: calc(100% / 2 -30px);
+                margin-bottom: 30px;
+                width: calc(100% / 2 -30px);
             }
         
             @include tablet {
@@ -57,7 +56,7 @@
 }
 
 .clients-list__link {
-    max-width: 100%;
+    max-width: 210px;;
     height: 92px;
     border: 1px solid #AFB1B8;
     box-sizing: border-box;

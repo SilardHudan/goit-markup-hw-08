@@ -9,7 +9,7 @@
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
         ),
-        url(../img/heromob.jpg);
+        url(../img/heromob-x1.jpg);
     background-position: center;
     background-repeat: no-repeat;
     @media (min-device-pixel-ratio: 2),
@@ -19,14 +19,14 @@
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
         ),
-        url(../img/heromob-2x.jpg);
+        url(../img/heromob-x2.jpg);
         }
     @include tablet {
         background-image: linear-gradient(
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
         ),
-        url(../img/herotab.jpg);
+        url(../img/herotab-x1.jpg);
     @media (min-device-pixel-ratio: 2),
         (min-resolution: 192dpi),
         (min-resolution: 2dppx) {
@@ -34,14 +34,14 @@
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
         ),
-        url(../img/herotab-2x.jpg);
+        url(../img/herotab-x1.jpg);
             }
     }
     @include desktop {
         background-image: linear-gradient(
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)),
-        url(../img/herobg.jpg);
+        url(../img/herobg-x1.jpg);
     @media (min-device-pixel-ratio: 2),
         (min-resolution: 192dpi),
         (min-resolution: 2dppx) {
@@ -49,7 +49,7 @@
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
         ),
-        url(../img/herobg-2x.jpg);              
+        url(../img/herobg-x2.jpg);              
              }
         padding-top: 200px;
         padding-bottom: 200px;

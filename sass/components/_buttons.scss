@@ -77,6 +77,9 @@
     &:focus {
             fill: #188CE8;
         }
+        @include tablet {
+            display: none;
+        }
         @include desktop {
             display: none;
         }

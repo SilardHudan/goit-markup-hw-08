@@ -22,6 +22,11 @@
         <div class="container">
             <a class="logo header__logo link" lang="en" href=""><span
                     class="logo header__logo-second link">Web</span>Studio</a>
+            <button type="button" class="header__menu-btn">
+                <svg width="40" height="40">
+                    <use href="./icons/symbol-defs.svg#icon-mob-menu"></use>
+                </svg>
+            </button>
             <nav class="navgation">
                 <ul class='menu-list list'>
                     <li class="menu-list__item"><a class="menu-list__link-second link" href="./index.html">Студия</a></li>
@@ -30,16 +35,52 @@
                     <li class="menu-list__item"><a class="menu-list__link-second link" href="">Контакты</a></li>
                 </ul>
             </nav>
+    
             <ul class='connect header__conect list'>
-                <li><a class="connect__mail link" href="mailto:info@devstudio.com"><svg
-                            class="connect__icon" width="16" height="12">
+                <li><a class="connect__mail link" href="mailto:info@devstudio.com"><svg class="connect__icon" width="16"
+                            height="12">
                             <use href="./icons/symbol-defs.svg#icon-envelope"></use>
                         </svg>info@devstudio.com</a></li>
-                <li><a class="connect__tel link" href="tel:+380961111111"><svg class="connect__icon"
-                            width="10" height="16">
+                <li><a class="connect__tel link" href="tel:+380961111111"><svg class="connect__icon" width="10" height="16">
                             <use href="./icons/symbol-defs.svg#icon-smartphone"></use>
                         </svg>+38 096 111 11 11</a></li>
             </ul>
+        </div>
+    
+        <div class="mob-menu is-hidden">
+            <div class="container">
+                <div class="mob-menu-top">
+                    <button type="button" class="mob-menu__close-btn">
+                        <svg width="19" height="19">
+                            <use href="./icons/symbol-defs.svg#icon-close"></use>
+                        </svg>
+                    </button>
+                    <nav class="mob-navgation">
+                        <ul class='mob-menu-list list'>
+                            <li class="mob-menu-list__item"><a class="mob-menu-list__link-second link"
+                                    href="./index.html">Студия</a></li>
+                            <li class="mob-menu-list__item"><a class="mob-menu-list__link-first link"
+                                    href="./portfolio.html">Портфолио</a></li>
+                            <li class="mob-menu-list__item"><a class="mob-menu-list__link-second link" href="">Контакты</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="mob-menu-bottom">
+                    <ul class='mob-menu__conect list'>
+                        <li class="mob-menu__conect-item"><a class="mob-menu__tel link" href="tel:+380961111111">+38 096 111
+                                11 11</a></li>
+                        <li class="mob-menu__conect-item"><a class="mob-menu__mail link"
+                                href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+                    </ul>
+                    <ul class="mob-menu__soc-list list">
+                        <li class="mob-menu__soc-item"><a class="mob-menu__soc-link link" href="">Instagram</a></li>
+                        <li class="mob-menu__soc-item"><a class="mob-menu__soc-link link" href="">Twitter</a></li>
+                        <li class="mob-menu__soc-item"><a class="mob-menu__soc-link link" href="">Facebook</a></li>
+                        <li class="mob-menu__soc-item"><a class="mob-menu__soc-link link" href="">LinkedIn</a></li>
+                    </ul>
+                </div>
+            </div>
         </div>
     </header>
     <main>
@@ -56,7 +97,27 @@
                 <ul class="portfolio__img-list list">
                     <li class="portfolio__group">
                         <div class="portfolio__wrap">
-                            <a href=""><img src="img/img1-0.jpg" alt="Технокряк" width="370"></a>
+                            <a href="">
+                                <picture>
+                                    <source srcset="
+                                                                        ./img/pf-0-x1.jpg 1x,
+                                                                        ./img/pf-0-x2.jpg 2x
+                                                                        "
+                                        media="(min-width:1200p)">
+                                    <source srcset="                               
+                                                                        ./img/pf-0-tab-x1.jpg 1x,                             
+                                                                        ./img/pf-0-tab-x2.jpg 2x                        
+                                                                        "
+                                        media="(min-width:768p)">
+                                    <source srcset="
+                                                                        ./img/pf-0-mob-x1.jpg 1x,                             
+                                                                        ./img/pf-0-mob-x2.jpg 2x
+                                                                        "
+                                        media="(max-width:767p)">
+                                
+                                    <img class="team-block__img" src="./img/pf-0-x1.jpg" alt="Технокряк">
+                                </picture>
+                                </a>
                             <p class="portfolio__img-text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все
                                 это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
                         </div>
@@ -67,10 +128,32 @@
                     </li>
                     <li class="portfolio__group">
                         <div class="portfolio__wrap">
-                            <a href=""><img src="img/img1-1.jpg" alt="Постер New Orlean vs Golden Star" width="370"></a>
+                            <a href="">
+                                <picture>
+                                    <source
+                                        srcset="
+                                                                        ./img/pf-1-x1.jpg 1x,
+                                                                        ./img/pf-1-x2.jpg 2x
+                                                                        "
+                                        media="(min-width:1200p)">
+                                    <source
+                                        srcset="                               
+                                                                        ./img/pf-1-tab-x1.jpg 1x,                             
+                                                                        ./img/pf-1-tab-x2.jpg 2x                        
+                                                                        "
+                                        media="(min-width:768p)">
+                                    <source
+                                        srcset="
+                                                                        ./img/pf-1-mob-x1.jpg 1x,                             
+                                                                        ./img/pf-1-mob-x2.jpg 2x
+                                                                        "
+                                        media="(max-width:767p)">
+                                
+                                    <img class="team-block__img" src="./img/pf-1-x1.jpg" alt="Постер New Orlean vs Golden Star">
+                                </picture>
+                                </a>
                             <p class="portfolio__img-text">Ресурс предлагает комплексные предложения с разным уровнем функционала и
-                                сервисов. Все
-                                это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
+                                сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
                         </div>
                         <div class="portfolio-tt">
                             <h3 class="portfolio__title">Постер New Orlean vs Golden Star</h3>
@@ -79,7 +162,30 @@
                     </li>
                     <li class="portfolio__group">
                         <div class="portfolio__wrap">
-                            <a href=""><img src="img/img1-2.jpg" alt="Ресторан Seafood" width="370"></a>
+                            <a href="">
+                                <picture>
+                                    <source
+                                        srcset="
+                                                                        ./img/pf-2-x1.jpg 1x,
+                                                                        ./img/pf-2-x2.jpg 2x
+                                                                        "
+                                        media="(min-width:1200p)">
+                                    <source
+                                        srcset="                               
+                                                                        ./img/pf-2-tab-x1.jpg 1x,                             
+                                                                        ./img/pf-2-tab-x2.jpg 2x                        
+                                                                        "
+                                        media="(min-width:768p)">
+                                    <source
+                                        srcset="
+                                                                        ./img/pf-2-mob-x1.jpg 1x,                             
+                                                                        ./img/pf-2-mob-x2.jpg 2x
+                                                                        "
+                                        media="(max-width:767p)">
+                                
+                                    <img class="team-block__img" src="./img/pf-2-x1.jpg" alt="Ресторан Seafood">
+                                </picture>
+                            </a>
                             <p class="portfolio__img-text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все
                                 это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
                         </div>
@@ -90,7 +196,30 @@
                     </li>
                     <li class="portfolio__group">
                         <div class="portfolio__wrap">
-                            <a href=""><img src="img/img1-3.jpg" alt="Проект Prime" width="370"></a>
+                            <a href="">
+                                <picture>
+                                    <source
+                                        srcset="
+                                                                        ./img/pf-3-x1.jpg 1x,
+                                                                        ./img/pf-3-x2.jpg 2x
+                                                                        "
+                                        media="(min-width:1200p)">
+                                    <source
+                                        srcset="                               
+                                                                        ./img/pf-3-tab-x1.jpg 1x,                             
+                                                                        ./img/pf-3-tab-x2.jpg 2x                        
+                                                                        "
+                                        media="(min-width:768p)">
+                                    <source
+                                        srcset="
+                                                                        ./img/img1-3-mob-x1.jpg 1x,                             
+                                                                        ./img/img1-3-mob-x2.jpg 2x
+                                                                        "
+                                        media="(max-width:767p)">
+                                
+                                    <img class="team-block__img" src="./img/pf-3-x1.jpg" alt="Проект Prime">
+                                </picture>
+                                </a>
                             <p class="portfolio__img-text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все
                                 это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
                         </div>
@@ -101,7 +230,30 @@
                     </li>
                     <li class="portfolio__group">
                         <div class="portfolio__wrap">
-                            <a href=""><img src="img/img1-4.jpg" alt="PПроект Boxes" width="370"></a>
+                            <a href="">
+                                <picture>
+                                    <source
+                                        srcset="
+                                                                        ./img/pf-4-x1.jpg 1x,
+                                                                        ./img/pf-4-x2.jpg 2x
+                                                                        "
+                                        media="(min-width:1200p)">
+                                    <source
+                                        srcset="                               
+                                                                        ./img/pf-4-tab-x1.jpg 1x,                             
+                                                                        ./img/pf-4-tab-x2.jpg 2x                        
+                                                                        "
+                                        media="(min-width:768p)">
+                                    <source
+                                        srcset="
+                                                                        ./img/pf-4-mob-x1.jpg 1x,                             
+                                                                        ./img/pf-4-mob-x2.jpg 2x
+                                                                        "
+                                        media="(max-width:767p)">
+                                
+                                    <img class="team-block__img" src="./img/pf-4-x1.jpg" alt="Проект Boxes">
+                                </picture>
+                                </a>
                             <p class="portfolio__img-text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все
                                 это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
                         </div>
@@ -112,7 +264,30 @@
                     </li>
                     <li class="portfolio__group">
                         <div class="portfolio__wrap">
-                            <a href=""><img src="img/img1-5.jpg" alt="Inspiration has no Borders" width="370"></a>
+                            <a href="">
+                                <picture>
+                                    <source
+                                        srcset="
+                                                                        ./img/pf-5-x1.jpg 1x,
+                                                                        ./img/pf-5-x2.jpg 2x
+                                                                        "
+                                        media="(min-width:1200p)">
+                                    <source
+                                        srcset="                               
+                                                                        ./img/pf-5-tab-x1.jpg 1x,                             
+                                                                        ./img/pf-5-tab-x2.jpg 2x                        
+                                                                        "
+                                        media="(min-width:768p)">
+                                    <source
+                                        srcset="
+                                                                        ./img/pf-5-mob-x1.jpg 1x,                             
+                                                                        ./img/pf-5-mob-x2.jpg 2x
+                                                                        "
+                                        media="(max-width:767p)">
+                                
+                                    <img class="team-block__img" src="./img/pf-5-x1.jpg" alt="Inspiration has no Borders">
+                                </picture>
+                                </a>
                             <p class="portfolio__img-text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все
                                 это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
                         </div>
@@ -123,7 +298,24 @@
                     </li>
                     <li class="portfolio__group">
                         <div class="portfolio__wrap">
-                            <a href=""><img src="img/img1-6.jpg" alt="Издание Limited Edition" width="370"></a>
+                            <a href="">
+                                <picture>
+                                    <source srcset="
+                                                                        ./img/pf-6-x1.jpg 1x,
+                                                                        ./img/pf-6-x2.jpg 2x
+                                                                        " media="(min-width:1200p)">
+                                    <source srcset="                               
+                                                                        ./img/pf-6-tab-x1.jpg 1x,                             
+                                                                        ./img/pf-6-tab-x2.jpg 2x                        
+                                                                        " media="(min-width:768p)">
+                                    <source srcset="
+                                                                        ./img/pf-6-mob-x1.jpg 1x,                             
+                                                                        ./img/pf-6-mob-x2.jpg 2x
+                                                                        " media="(max-width:767p)">
+                                
+                                    <img class="team-block__img" src="./img/pf-6-x1.jpg" alt="Издание Limited Edition">
+                                </picture>
+                                </a>
                             <p class="portfolio__img-text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все
                                 это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
                         </div>
@@ -134,7 +326,24 @@
                     </li>
                     <li class="portfolio__group">
                         <div class="portfolio__wrap">
-                            <a href=""><img src="img/img1-7.jpg" alt="Проект LAB" width="370"></a>
+                            <a href="">
+                                <picture>
+                                    <source srcset="
+                                                                        ./img/pf-7-x1.jpg 1x,
+                                                                        ./img/pf-7-x2.jpg 2x
+                                                                        " media="(min-width:1200p)">
+                                    <source srcset="                               
+                                                                        ./img/pf-7-tab-x1.jpg 1x,                             
+                                                                        ./img/pf-7-tab-x2.jpg 2x                        
+                                                                        " media="(min-width:768p)">
+                                    <source srcset="
+                                                                        ./img/pf-7-mob-x1.jpg 1x,                             
+                                                                        ./img/pf-7-mob-x2.jpg 2x
+                                                                        " media="(max-width:767p)">
+                                
+                                    <img class="team-block__img" src="./img/pf-7-x1.jpg" alt="Проект LAB">
+                                </picture>
+                                </a>
                             <p class="portfolio__img-text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все
                                 это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
                         </div>
@@ -145,7 +354,24 @@
                     </li>
                     <li class="portfolio__group">
                         <div class="portfolio__wrap">
-                            <a href=""><img src="img/img1-8.jpg" alt="Growing Business" width="370"></a>
+                            <a href="">
+                                <picture>
+                                    <source srcset="
+                                                                        ./img/pf-8-x1.jpg 1x,
+                                                                        ./img/pf-8-x2.jpg 2x
+                                                                        " media="(min-width:1200p)">
+                                    <source srcset="                               
+                                                                        ./img/pf-8-tab-x1.jpg 1x,                             
+                                                                        ./img/pf-8-tab-x2.jpg 2x                        
+                                                                        " media="(min-width:768p)">
+                                    <source srcset="
+                                                                        ./img/pf-8-mob-x1.jpg 1x,                             
+                                                                        ./img/pf-8-mob-x2.jpg 2x
+                                                                        " media="(max-width:767p)">
+                                
+                                    <img class="team-block__img" src="./img/pf-8-x1.jpg" alt="Growing Business">
+                                </picture>
+                                </a>
                             <p class="portfolio__img-text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все
                                 это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
                         </div>
@@ -161,52 +387,54 @@
     <footer class="footer">
         <div class="container">
             <div class="footer-block">
-                <div class="footer-group footer__group">
-                    <a class="footer-group__logo link" lang="en" href=""><span
-                            class="footer-group__logo-second link">Web</span>Studio</a>
-                    <address class="footer-group__address">г. Киев, пр-т Леси Украинки, 26</address>
-                    <ul class="footer-group__list list">
-                        <li class="footer-group__mail-item"><a class="footer-group__mail-link link"
-                                href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-                        <li class="footer-group__tel-item"><a class="footer-group__tel-link link"
-                                href="tel:+380961111111">+38 096 111 1111</a></li>
-                    </ul>
-                </div>
-                <div class="footer-soclist">
-                    <p class="footer-soclist__text">присоединяйтесь</p>
-                    <ul class="footer-soclist__list list">
-                        <li class="footer-soclist__item">
-                            <a href="" class="footer-soclist__link soc-icon--dark">
-                                <svg class="footer-soclist__icon" width="20" height="20">
-                                    <use href="./icons/symbol-defs.svg#icon-instagram"></use>
-                                </svg>
-                            </a>
-                        </li>
-                        <li class="footer-soclist__item">
-                            <a href="" class="footer-soclist__link soc-icon--dark">
-                                <svg class="footer-soclist__icon" width="20" height="20">
-                                    <use href="./icons/symbol-defs.svg#icon-twitter"></use>
-                                </svg>
-                            </a>
-                        </li>
-                        <li class="footer-soclist__item">
-                            <a href="" class="footer-soclist__link soc-icon--dark">
-                                <svg class="footer-soclist__icon" width="20" height="20">
-                                    <use href="./icons/symbol-defs.svg#icon-facebook"></use>
-                                </svg>
     
-                            </a>
-                        </li>
-                        <li class="footer-soclist__item">
-                            <a href="" class="footer-soclist__link soc-icon--dark">
-                                <svg class="footer-soclist__icon" width="20" height="20">
-                                    <use href="./icons/symbol-defs.svg#icon-linkedin"></use>
-                                </svg>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
+                <div class="footer-group">
+                    <div>
+                        <a class="footer-group__logo link" lang="en" href=""><span
+                                class="footer-group__logo-second link">Web</span>Studio</a>
+                        <address class="footer-group__address">г. Киев, пр-т Леси Украинки, 26</address>
+                        <ul class="footer-group__list list">
+                            <li class="footer-group__mail-item"><a class="footer-group__mail-link link"
+                                    href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+                            <li class="footer-group__tel-item"><a class="footer-group__tel-link link"
+                                    href="tel:+380961111111">+38 096 111 1111</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-soclist">
+                        <p class="footer-soclist__text">присоединяйтесь</p>
+                        <ul class="footer-soclist__list list">
+                            <li class="footer-soclist__item">
+                                <a href="" class="footer-soclist__link soc-icon--dark">
+                                    <svg class="footer-soclist__icon" width="20" height="20">
+                                        <use href="./icons/symbol-defs.svg#icon-instagram"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="footer-soclist__item">
+                                <a href="" class="footer-soclist__link soc-icon--dark">
+                                    <svg class="footer-soclist__icon" width="20" height="20">
+                                        <use href="./icons/symbol-defs.svg#icon-twitter"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="footer-soclist__item">
+                                <a href="" class="footer-soclist__link soc-icon--dark">
+                                    <svg class="footer-soclist__icon" width="20" height="20">
+                                        <use href="./icons/symbol-defs.svg#icon-facebook"></use>
+                                    </svg>
     
+                                </a>
+                            </li>
+                            <li class="footer-soclist__item">
+                                <a href="" class="footer-soclist__link soc-icon--dark">
+                                    <svg class="footer-soclist__icon" width="20" height="20">
+                                        <use href="./icons/symbol-defs.svg#icon-linkedin"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
     
                 <form>
                     <div class="footer-input-group">
@@ -228,6 +456,7 @@
     
         </div>
     </footer>
+    <script src="./js/menu.js"></script>
 </body>
 
 </html>

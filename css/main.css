@@ -1176,13 +1176,21 @@ button {
   }
 }
 
+.clients-list {
+  margin-bottom: -30px;
+  margin-right: -30px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
 @media screen and (min-width: 480px) {
   .clients-list {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    margin-right: -30px;
     margin-bottom: -30px;
+    margin-right: -30px;
   }
 }
 
@@ -1207,12 +1215,17 @@ button {
 
 .clients-list__item {
   margin-bottom: 30px;
+  margin-right: 30px;
+  min-width: 210px;
+  min-height: 92px;
 }
 
 @media screen and (min-width: 480px) {
   .clients-list__item {
     margin-right: 30px;
     margin-bottom: 30px;
+    min-width: 210px;
+    min-height: 92px;
     width: calc(100% / 2 -30px);
   }
 }
@@ -1221,7 +1234,7 @@ button {
   .clients-list__item {
     margin-right: 30px;
     margin-bottom: 30px;
-    width: calc(100% / 4 -30px);
+    width: calc(100% / 3 -30px);
   }
 }
 

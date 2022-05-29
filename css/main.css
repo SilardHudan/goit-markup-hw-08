@@ -1203,6 +1203,16 @@ button {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .clients-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-right: -30px;
+    margin-bottom: -30px;
+  }
+}
+
 .clients-list__item {
   margin-bottom: 30px;
   width: 210px;
@@ -1258,6 +1268,27 @@ button {
 .clients-list__link:focus {
   fill: #2196F3;
   border: 1px solid #2196F3;
+}
+
+@media screen and (min-width: 480px) {
+  .clients-list__link {
+    width: 210px;
+    height: 92px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .clients-list__link {
+    width: 226px;
+    height: 92px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .clients-list__link {
+    width: 170px;
+    height: 92px;
+  }
 }
 
 .clients-list__link:hover {

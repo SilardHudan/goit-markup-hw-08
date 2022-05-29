@@ -5,7 +5,12 @@
     line-height: 1.19;
     letter-spacing: 0.03em;
     color: #000000;
-    margin-right: 93px;
+    @include tablet {
+            margin-right: 88px;
+        }
+    @include desktop {
+            margin-right: 93px;
+        }
 }
 
 .header__logo-second {

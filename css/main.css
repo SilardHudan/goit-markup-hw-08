@@ -849,7 +849,7 @@ button {
   }
 }
 
-.modal__submint-btn {
+.modal__submit-btn {
   width: 200px;
   height: 50px;
   font-size: 16px;
@@ -871,7 +871,7 @@ button {
 }
 
 @media screen and (min-width: 1200px) {
-  .modal__submint-btn {
+  .modal__submit-btn {
     margin-left: 125px;
   }
 }

@@ -58,7 +58,10 @@
         }
 
 .team__title {
-    margin-bottom: 50px
+    margin-bottom: 30px;
+        @include desktop {
+            margin-bottom: 50px;
+        }
 }
 .team-block__title {
     font-weight: 500;
@@ -84,5 +87,8 @@
 }
 
 .clients__title {
-    margin-bottom: 50px;
+    margin-bottom: 30px;
+        @include desktop {
+            margin-bottom: 50px;
+        }
 }

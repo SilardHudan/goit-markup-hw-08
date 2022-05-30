@@ -1,6 +1,11 @@
 .header {
     background: #FFFFFF;
     border-bottom: 1px solid #ECECEC;
+    @include mobile{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    }
+   
 }
 
 

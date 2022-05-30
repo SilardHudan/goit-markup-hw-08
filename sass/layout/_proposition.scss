@@ -8,6 +8,7 @@
   }
 }
 .proposition__list {
+    margin-bottom: -30px;
     @include tablet {
             display: flex;
             flex-wrap: wrap;
@@ -25,10 +26,7 @@
     
 }
 .proposition__block{
-    @include mobile {
-            margin-bottom: 30px;
-    }
-    
+    margin-bottom: 30px;  
     @include tablet {
             margin-right: 30px;
             margin-bottom: 30px;
